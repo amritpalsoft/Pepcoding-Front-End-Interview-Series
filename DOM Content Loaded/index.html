@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://source.unsplash.com/user/erondu/300x300" alt="">
+    <a href="https://www.google.com">Google</a>
+    <div>Hello Amrit</div>
+    <script>
+        alert(document.readyState)
+        document.addEventListener('DOMContentLoaded',(e)=>{
+            alert('DOM is loaded');
+            alert(document.readyState)
+        })
+        window.addEventListener('load',(e)=>{
+            alert('Load event occurs')
+            alert(document.readyState)
+        })
+        window.addEventListener('beforeunload',(e)=>{
+            return event.returnValue=""
+        })
+        window.addEventListener('unload',(e)=>{
+            return event.returnValue="are"
+        })
+    </script>
+</body>
+</html>

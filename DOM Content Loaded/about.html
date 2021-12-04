@@ -1,0 +1,21 @@
+Lifecycle of Html (loading) :
+i. DOM Content Loaded
+ii. Loaded
+iii. Unload --> a. beforeUnload  b. Unload
+
+--> DOM Content Loaded : DOM tree load(html elements), document fully read,parsing, built
+
+--> Load : images, iframes, fonts, css, icons, i.e. external resources loading
+
+--> Unload : reload, navigate, close
+
+--> beforeUnload : confirmation before unloading 
+                   i.e Do you want to close ?
+
+--> DOM Content Loaded works on document object of Browser i.e. Html
+--> Whereas Load, unload works on window object of browser 
+
+--> Ready State : indicates current loading State
+                  i.e loading-->initial loading State
+                  interactive--> DOM content loaded, document fully Ready
+                  complete--> load, external resource read
